@@ -45,7 +45,7 @@ law_pdf_parser/
 ├── tests/
 │   └── test_parser.py     # 단위 테스트 7개 (PDF 없이 문자열로 검증)
 ├── data/
-│   ├── pdf/               # 원본 법령 PDF 41건
+│   ├── pdf/               # 원본 법령 PDF 41건 자리 (저장소 미포함 — data/pdf/README.md 의 목록대로 내려받기)
 │   └── raw/               # 파싱 결과 JSON (실행 시 재생성)
 └── results/
     ├── parse_report.csv   # 문서별 조문 수·메타 추출 여부
@@ -61,6 +61,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # 2) 파싱 실행 (data/pdf → data/raw, results/)
+#    ※ 원본 PDF 는 저장소에 없으므로 data/pdf/README.md 목록대로 먼저 내려받으세요.
+#      파싱 결과(data/raw/*.json)는 저장소에 포함되어 있습니다.
 python scripts/parse_pdfs.py
 
 # 3) 졸업논문 데이터셋 v1.0 과 동일한 결과가 필요할 때

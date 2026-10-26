@@ -18,3 +18,8 @@ checkpoints/quick/
 Thumbs.db
 .vscode/
 .idea/
+
+# 원본 법령 PDF 는 저장소에 넣지 않음 (data/pdf/README.md 참고)
+data/pdf/*.pdf
+data/pdf/*.ggpdf
+*.ggpdf
